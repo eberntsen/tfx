@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<VBox id="helloWorld" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" prefHeight="600" prefWidth="800">
+<Label fx:id="helloLabel" id="helloLabel">Hello world!</Label>
+<ListView fx:id="accountList"/>
+    <HBox>
+     <Button id="createAccountButton" fx:id="createAccountButton">Opprett konto</Button>
+     <Button id="depositButton" fx:id="depositButton">Sett inn penger</Button>
+     <Button id="withdrawButton" fx:id="withdrawButton">Ta ut penger</Button>
+
+ </HBox>
+    <Button onAction="#getAccounts">Oppdater</Button>
+
+</VBox>
